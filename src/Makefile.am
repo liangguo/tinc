@@ -66,6 +66,10 @@ if SOLARIS
 tincd_SOURCES += solaris/device.c
 endif
 
+if AIX
+tincd_SOURCES += aix/device.c
+endif
+
 if MINGW
 tincd_SOURCES += mingw/device.c mingw/common.h
 endif
